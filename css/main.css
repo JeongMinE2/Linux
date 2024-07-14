@@ -18,12 +18,102 @@ a {
 header {
     width: 100%;
     height: 105px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header a img {
     margin-left: 20px;
     margin-right: 20px;
     height: 105px;
+}
+
+/* 로그인 블럭 */
+#login-block {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-block button {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+#login-block button:hover {
+    background-color: #a0a0a0;
+    cursor: pointer;
+}
+
+/* 로그인 모달창 */
+#login-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#login-modal {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 2px #000;
+    text-align: center;
+}
+
+#login-modal p {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#login-modal .top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#login-modal .id-text {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#login-modal input {
+    width: 300px;
+    height: 25px;
+}
+
+#login-modal .password-text {
+    margin: 10px;
+    font-size: 20px;
+}
+
+#login-footer {
+    padding: 30px;
+    margin-top: 150px;
+}
+
+#login-footer #login {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#login-footer #join {
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 
 /* KG아이티뱅크 링크 */

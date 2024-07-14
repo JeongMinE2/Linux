@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LINUX_1</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script defer src="./js/index.js"></script>
 </head>
 <body>
     <div id="wrap">
         <!-- 헤더 -->
         <header>
             <a href=""><img src="./images/LOGO.png" title="홈으로"></a>
+            <div id="login-block">
+                <button id="loginBtn">로그인</button>
+            </div>
         </header>
+
+        <!-- 로그인 창 -->
+         <div id="login-modal-background">
+            <!-- 모달창 배경화면 -->
+            <div id="login-modal">
+                <p class="top">로그인 하세요.</p>
+                <div>
+                    <span class="id-text">아이디 &nbsp&nbsp</span><input />
+                    <br />
+                    <span class="password-text">비밀번호</span><input />   
+                </div>
+                <div id="login-footer">
+                    <p id="login" onclick="showLogin();">로그인</p>
+                    <p id="join" onclick="showJoin();">회원가입</p>
+                </div>
+             </div>
+         </div>
 
         <!-- 본문 -->
         <div id="kgit">
