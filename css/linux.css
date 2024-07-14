@@ -25,3 +25,30 @@ header a img {
     margin-right: 20px;
     height: 105px;
 }
+
+#prompt {
+    margin: 50px;
+    font-size: 20px;
+}
+
+#prompt dl {
+    margin-bottom: 20px;
+}
+
+#prompt p {
+    margin-bottom: 10px;
+}
+
+#prompt img {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+#list {
+    margin: 30px;
+}
+
+#list .ubuntu_ins {
+    font-size: 25px;
+}
