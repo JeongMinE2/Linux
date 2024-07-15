@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디렉터리 구조</title>
+    <link rel="stylesheet" type="text/css" href="./css/directory.css">
+</head>
+<body>
+    <div>
+        <!-- 헤더 -->
+        <header>
+            <a href=""><img src="./images/LOGO.png" title="홈으로"></a>
+            <div id="login-block">
+                <button id="loginBtn">로그인</button>
+            </div>
+        </header>
+        <div class="terminal">
+            /ls
+        </div>
+        <img src="./images/ls.png" class="ls"/>
+        <br />
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>Linux</th>
+                    <th>Window</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>경로</th>
+                    <td>/</td>
+                    <td>\</td>
+                </tr>
+                <tr>
+                    <th>명칭</th>
+                    <td>디렉터리</td>
+                    <td>폴더</td>
+                </tr>
+                <tr>
+                    <th>최상위 경로</th>
+                    <td>/</td>
+                    <td>C:\</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>/home/ : 사용자 계정의 홈 디렉터리들의 기본 모임</td>
+                    <td>C:\사용자\ or C:\Users\</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>/root/ : 관리자 홈 디렉터리</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>/etc/ : 시스템 및 설치된 프로그램들이 저장</td>
+                    <td>Windows랑 비슷한 역할</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>/bin -> /usr/bin/ : 기본 명령어 실행 프로그램들</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        /sbin -> /usr/sbin : 시스템 명령어들이 있다.(root)만 사용
+                        <br />
+                        관리자 권한이 있어야 사용
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
