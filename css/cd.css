@@ -9,8 +9,8 @@
     margin: 50px;
 }
 
-/* 페이지 제목 */
-.title h1 {
+#content_top {
+    margin-bottom: 50px;
     font-family: 'consolas';
 }
 
@@ -26,13 +26,12 @@
 
 .terminal p {
     color: #fff;
-    font-size: 15px;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#explanation {
-    margin-bottom: 30px;
+#content_middle {
+    margin-bottom: 50px;
 }
 
 .grammar {
@@ -46,25 +45,18 @@
 
 .grammar p {
     color: #fff;
-    font-size: 15px;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-.cd_sudo {
-    margin-top: 50px;
-    font-size: 15px;
+#content_bottom {
+    margin-bottom: 50px;
 }
 
-.cd_sudo img {
+#content_bottom img {
     width: 500px;
 }
 
-.ex {
-    margin-top: 50px;
-    font-size: 15px;
-}
-
 .ex img {
-    width: 150px;
+    width: 130px;
 }
