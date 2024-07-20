@@ -5,62 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LINUX_1</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script defer src="./js/index.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <!-- 헤더 -->
-        <header>
-            <a href=""><img src="./images/LOGO.png" title="홈으로"></a>
-            <div id="login-block">
-                <button id="loginBtn">로그인</button>
-            </div>
-        </header>
+  <div>
+    <header>
+      <div id="logo">
+        <a href="./index.html">
+          <img src="./images/LOGO.png" title="홈으로">
+        </a>
+      </div>
 
-        <!-- 로그인 창 -->
-         <div id="login-modal-background">
-            <!-- 모달창 배경화면 -->
-            <div id="login-modal">
-                <p class="top">로그인 하세요.</p>
-                <div>
-                    <span class="id-text">아이디 &nbsp&nbsp</span><input />
-                    <br />
-                    <span class="password-text">비밀번호</span><input type="password"/>   
-                </div>
-                <div id="login-footer">
-                    <p id="login" onclick="showLogin();">로그인</p>
-                    <p id="join" onclick="showJoin();">회원가입</p>
-                </div>
-             </div>
-         </div>
+      <nav>
+        <ul id="list-wrap">
+          <li class="drop-down-wrap">
+            <p>Linux1</p>
+            <ul class="drop-dowm">
+              <li><a href="./ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+              <li><a href="./ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+              <li><a href="./directory.html">디렉터리 구조</a></li>
+              <li><a href="#">명령어</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Linux2</p>
+            <ul>
+              <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>회원 정보</p>
+            <ul>
+              <li><a href="#">회원 정보</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- 본문 -->
-        <div id="kgit">
-            <a href="https://mgr.kgitbank.com/" title="https://mgr.kgitbank.com/" target="_blank">KG아이티뱅크 바로가기</a>
+      <div id="login-block">
+        <button id="loginBtn">로그인</button>
+      </div>
+    </header>
+    
+    <div id="login-modal-background">
+      <div id="login-modal">
+        <p class="login">Login</p>
+        <div>
+          <input class="id-text" placeholder="아이디" />
         </div>
-        <div id="time">
-            <p>평일반(월~목)</p>
-            <p>기간 - 2024/07/08 ~ 2024/08/01</p>
-            <p>시간 - 19:00 ~ 22:00</p>
+        <div>
+          <input class="pw-text" placeholder="비밀번호" type="password" />
         </div>
-        <a href="./linux.html" id="linux-link">LUNUX1 수업 ></a>
-        <div id="curriculum">
-            <img src="./images/curriculum.png" />
+        <div>
+          <input class="checkbox" type="checkbox" />
+          <label>로그인 유지하기</label>
         </div>
-
-        <!-- 푸터 -->
-        <footer>
-            <div id="info">
-                <span class="name">정민이</span>
-                <span class="position">사원</span>
-                <br />
-                <p class="mobile">Mobile : <a href="tel:01047212837">010-4721-2837</a></p>
-                <p class="email">E-mail : mini@aegisk.com</p>
-            </div>
-            <div id="aegisk">
-                <a href="http://www.aegisk.com/">www.aegisk.com</a>
-            </div>
-        </footer>
+        <div>
+          <p id="login" onclick="showLogin();">로그인</p>
+        </div>
+      </div>
     </div>
+      
+    <div id="kg-banner">
+      <a href="https://mgr.kgitbank.com/" title="새 창으로 열기" target="_blank">
+        <img src="./images/kg_itbank.jpg"/>
+      </a>
+      <a href="https://mgr.kgitbank.com/" title="새 창으로 열기" target="_blank">
+        <p>사이트 바로가기</p>
+      </a>
+    </div>
+      
+    <div id="time">
+      <p>평일반(월~목)</p>
+      <p>기간 - 2024/07/08 ~ 2024/08/01</p>
+      <p>시간 - 19:00 ~ 22:00</p>
+    </div>
+    <a href="./linux.html" id="linux-link">LUNUX1 수업 ></a>
+    <div id="curriculum">
+      <img src="./images/curriculum.png" />
+    </div>
+      
+    <div>
+      <h2>멘토 정보</h2>
+      <p>안동진</p>
+      <p>Mobile : <a href="tel:01030411224">010-3041-1224</a></p>
+      <p>E-mail : <a href="mailto:adj0123@naver.com">adj0123@naver.com</a></p>
+    </div>
+      
+    <footer>
+      <div id="info">
+        <span class="name">정민이</span>
+        <span class="position">사원</span>
+        <br />
+        <p class="mobile">Mobile : <a href="tel:01047212837">010-4721-2837</a></p>
+        <p class="email">E-mail : <a href="mailto:mini@aegisk.com">mini@aegisk.com</a></p>
+      </div>
+      <div id="aegisk">
+        <a href="http://www.aegisk.com/">www.aegisk.com</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
