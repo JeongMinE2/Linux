@@ -9,8 +9,8 @@
     margin: 50px;
 }
 
-/* 페이지 제목 */
-.title h1 {
+#content_top {
+    margin-bottom: 50px;
     font-family: 'consolas';
 }
 
@@ -31,13 +31,13 @@
     white-space: nowrap;
 }
 
+/* 관리자 계정, 사용자 계정 */
 #account {
-    margin: 50px;
-    margin-left: 0px;
+    margin-bottom: 50px;
     display: flex;
 }
 
-#account .manager img {
+#account img {
     height: 50px;
 }
 
@@ -45,19 +45,9 @@
     margin-left: 50px;
 }
 
-#account .user img {
-    height: 50px;
-}
-
 /* 프롬프트란? */
-#prompt {
-    margin: 50px;
-    margin-left: 0px;
-    font-size: 15px;
-}
-
 dl {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 dl dt {
@@ -66,6 +56,5 @@ dl dt {
 
 #prompt img {
     margin: 10px 15px;
-    width: 200px;
-    height: 30px;
+    width: 150px;
 }
