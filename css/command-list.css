@@ -1,0 +1,30 @@
+/* 좌측 명령어 리스트 */
+#command-list {
+    padding: 50px 0 0;
+    width: 250px;
+    float: left;
+    text-align: center;
+}
+
+#command-list ul>a {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#command-list ul li {
+    padding: 10px 0;
+    width: 250px;
+    font-size: 15px;
+    font-family: 'consolas';
+    cursor: pointer;
+}
+
+#command-list ul li:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#command-list ul li:nth-child(1):hover {
+    background-color: #fff;
+}
