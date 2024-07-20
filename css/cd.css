@@ -1,0 +1,70 @@
+#command-list ul li:nth-child(3) {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* 네비바 아래 내용 */
+#content {
+    float: left;
+    margin: 50px;
+}
+
+/* 페이지 제목 */
+.title h1 {
+    font-family: 'consolas';
+}
+
+/* 터미널창 */
+.terminal {
+    width: 45px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.terminal p {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+#explanation {
+    margin-bottom: 30px;
+}
+
+.grammar {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.grammar p {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+.cd_sudo {
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.cd_sudo img {
+    width: 500px;
+}
+
+.ex {
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.ex img {
+    width: 150px;
+}
