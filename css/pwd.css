@@ -1,5 +1,39 @@
+#command-list ul li:nth-child(2) {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* 네비바 아래 내용 */
+#content {
+    float: left;
+    margin: 50px;
+}
+
+/* 페이지 제목 */
+.title h1 {
+    font-family: 'consolas';
+}
+
+/* 터미널창 */
+.terminal {
+    width: 50px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.terminal p {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
 #account {
     margin: 50px;
+    margin-left: 0px;
     display: flex;
 }
 
@@ -18,6 +52,7 @@
 /* 프롬프트란? */
 #prompt {
     margin: 50px;
+    margin-left: 0px;
     font-size: 15px;
 }
 

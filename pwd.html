@@ -6,6 +6,7 @@
     <title>pwd</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/pwd.css">
+    <link rel="stylesheet" type="text/css" href="./css/command-list.css">
 </head>
 <body>
     <div>
@@ -47,39 +48,61 @@
             </nav>
         </header>
 
-        <div id="content">
-            <div class="title">
-                <h1>명령어 - pwd</h1>
-            </div>
-            <div id="terminal" class="terminal">
-                <p>pwd</p>
+        <div>
+            <div id="command-list">
+                <ul>
+                    <li><h2>리눅스 명령어</h2></li>
+                    <li><a>pwd</a></li>
+                    <li><a>cd</a></li>
+                    <li><a>ls</a></li>
+                    <li><a>cp</a></li>
+                    <li><a>mv</a></li>
+                    <li><a>mkdir</a></li>
+                    <li><a>rm</a></li>
+                    <li><a>help</a></li>
+                    <li><a>touch</a></li>
+                    <li><a>cat</a></li>
+                    <li><a>head</a></li>
+                    <li><a>tail</a></li>
+                    <li><a>nl</a></li>
+                    <li><a>grep</a></li>
+                    <li><a>find</a></li>
+                </ul>
             </div>
     
-            <div id="explanation">
-                <p>현재 위치(경로)를 확인</p>
-            </div>
-        </div>
+            <div id="content">
+                <div class="title">
+                    <h1>명령어 - pwd</h1>
+                </div>
+                <div id="terminal" class="terminal">
+                    <p>pwd</p>
+                </div>
+        
+                <div id="explanation">
+                    <p>현재 위치(경로)를 확인</p>
+                </div>
 
-        <div id="account">
-            <div class="manager">
-                <img src="./images/pwd_root.png" />
-                <p>관리자 계정</p>
+                <div id="account">
+                    <div class="manager">
+                        <img src="./images/pwd_root.png" />
+                        <p>관리자 계정</p>
+                    </div>
+                    <div class="user">
+                        <img src="./images/pwd_samadal.png" />
+                        <p>사용자 계정</p>
+                    </div>
+                </div>
+                <div id="prompt">
+                    <dl>
+                        <dt>프롬프트란?</dt>
+                        <dd>시스템 안에 어떤 사용자 권한으로 <b><ins>명령어를 사용하기 위한 기호</ins></b></dd>
+                    </dl>
+                    <p># : 관리자 프롬프트</p>
+                    <img src="./images/root.png"/>
+                    <p>$ : 사용자 프롬프트</p>
+                    <img src="./images/user.png"/>
+                </div>
             </div>
-            <div class="user">
-                <img src="./images/pwd_samadal.png" />
-                <p>사용자 계정</p>
-            </div>
-        </div>
-
-        <div id="prompt">
-            <dl>
-                <dt>프롬프트란?</dt>
-                <dd>시스템 안에 어떤 사용자 권한으로 <b><ins>명령어를 사용하기 위한 기호</ins></b></dd>
-            </dl>
-            <p># : 관리자 프롬프트</p>
-            <img src="./images/root.png"/>
-            <p>$ : 사용자 프롬프트</p>
-            <img src="./images/user.png"/>
         </div>
     </div>
 </body>
