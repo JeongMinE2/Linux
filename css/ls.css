@@ -11,9 +11,6 @@
 
 #content_top {
     margin-bottom: 50px;
-}
-
-.title h1 {
     font-family: 'consolas';
 }
 
@@ -56,8 +53,8 @@
     margin-bottom: 50px;
 }
 
-.ex {
-    font-size: 15px;
+#content_bottom .example {
+    margin-bottom: 30px;
 }
 
 .ex img {
