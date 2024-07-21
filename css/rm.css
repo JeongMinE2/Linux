@@ -1,0 +1,81 @@
+#command-list ul li:nth-child(8) {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* 네비바 아래 내용 */
+#content {
+    float: left;
+    margin: 50px;
+}
+
+#content_top {
+    margin-bottom: 50px;
+    font-family: 'consolas';
+}
+
+/* 터미널창 */
+.terminal {
+    width: 45px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+#content_middle {
+    margin-bottom: 50px;
+}
+
+/* 문법 */
+.grammar {
+    width: 270px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.grammar p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+.terminal2 {
+    width: 40px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.terminal2 p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+.terminal3 {
+    width: 40px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+.terminal3 p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
