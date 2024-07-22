@@ -10,13 +10,13 @@
 }
 
 /* 본문 */
-#content_top {
+#command {
     margin-bottom: 50px;
     font-family: 'consolas';
 }
 
 /* 터미널창 */
-#content_top .terminal {
+#command .command_terminal {
     width: 45px;
     margin: 10px;
     padding: 10px;
@@ -25,18 +25,18 @@
     border: 3px solid green;
 }
 
-#content_top .terminal p {
+#command .command_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
 /* 문법 */
-#content_middle {
+#grammar {
     margin-bottom: 50px;
 }
 
-#content_middle .grammar {
+#grammar .grammar_terminal {
     width: 260px;
     margin: 10px;
     padding: 10px;
@@ -45,18 +45,18 @@
     border: 3px solid green;
 }
 
-#content_middle .grammar p {
+#grammar .grammar_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
 /* 옵션 */
-#content_bottom {
+#option {
     margin-bottom: 50px;
 }
 
-#content_bottom .terminal {
+#option .terminal {
     width: 45px;
     margin: 10px;
     padding: 10px;
@@ -65,12 +65,12 @@
     border: 3px solid green;
 }
 
-#content_bottom .terminal p {
+#option .terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#content_bottom .example {
+#option .example {
     margin-bottom: 30px;
 }

@@ -10,13 +10,13 @@
 }
 
 /* 명령어 설명 */
-#content_top {
+#command {
     margin-bottom: 50px;
     font-family: 'consolas';
 }
 
 /* 터미널창 */
-#content_top .terminal {
+#command .terminal {
     width: 50px;
     margin: 10px;
     padding: 10px;
@@ -25,7 +25,7 @@
     border: 3px solid green;
 }
 
-#content_top .terminal p {
+#command .terminal p {
     color: #fff;
     font-size: 15px;
     font-family: 'consolas';
