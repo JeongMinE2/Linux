@@ -1,0 +1,61 @@
+#command-list ul li:nth-child(2) {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* 본문 */
+#content {
+    float: left;
+    margin: 50px;
+}
+
+/* 명령어 설명 */
+#command {
+    margin-bottom: 50px;
+    font-family: 'consolas';
+}
+
+/* 터미널창 */
+#command .terminal {
+    width: 50px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#command .terminal p {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+/* 관리자 계정, 사용자 계정 */
+#account {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+#account img {
+    height: 50px;
+}
+
+#account .user {
+    margin-left: 50px;
+}
+
+/* 프롬프트란? */
+dl {
+    margin-bottom: 30px;
+}
+
+dl dt {
+    font-size: 20px;
+}
+
+#prompt img {
+    margin: 10px 15px;
+    width: 150px;
+}
