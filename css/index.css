@@ -7,15 +7,14 @@
 }
 
 #login-block button {
-    padding: 5px;
-    font-size: 20px;
+    padding: 3px;
     font-weight: bold;
-    border: 3px solid #000;
-    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
 }
 
 #login-block button:hover {
-    background-color: #a0a0a0;
+    background-color: #aaa;
     cursor: pointer;
 }
 
@@ -86,6 +85,7 @@
     color: #fff;
     background-color: #000;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 /* KG아이티뱅크 바로가기 배너 */

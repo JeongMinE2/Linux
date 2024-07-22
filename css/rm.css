@@ -3,19 +3,20 @@
     background-color: #f0f0f0;
 }
 
-/* 네비바 아래 내용 */
+/* 본문 */
 #content {
     float: left;
     margin: 50px;
 }
 
-#content_top {
+/* 명령어 설명 */
+#command {
     margin-bottom: 50px;
     font-family: 'consolas';
 }
 
 /* 터미널창 */
-.terminal {
+#command .command_terminal {
     width: 45px;
     margin: 10px;
     padding: 10px;
@@ -24,18 +25,18 @@
     border: 3px solid green;
 }
 
-.terminal p {
+#command .command_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#content_middle {
+/* 문법 */
+#grammar {
     margin-bottom: 50px;
 }
 
-/* 문법 */
-.grammar {
+#grammar .grammar_terminal {
     width: 270px;
     margin: 10px;
     padding: 10px;
@@ -44,13 +45,14 @@
     border: 3px solid green;
 }
 
-.grammar p {
+#grammar .grammar_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-.terminal2 {
+/* 옵션 */
+#option .option_terminal {
     width: 40px;
     margin: 10px;
     padding: 10px;
@@ -59,22 +61,7 @@
     border: 3px solid green;
 }
 
-.terminal2 p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-.terminal3 {
-    width: 40px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-.terminal3 p {
+#option .option_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;

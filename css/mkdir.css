@@ -3,19 +3,20 @@
     background-color: #f0f0f0;
 }
 
-/* 네비바 아래 내용 */
+/* 본문 */
 #content {
     float: left;
     margin: 50px;
 }
 
-#content_top {
+/* 명령어 설명 */
+#command {
     margin-bottom: 50px;
     font-family: 'consolas';
 }
 
 /* 터미널창 */
-.terminal {
+#command .command_terminal {
     width: 60px;
     margin: 10px;
     padding: 10px;
@@ -24,7 +25,23 @@
     border: 3px solid green;
 }
 
-.terminal p {
+#command .command_terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+/* 옵션 */
+#option .option_terminal {
+    width: 40px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#option .option_terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;

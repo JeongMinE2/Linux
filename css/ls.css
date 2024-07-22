@@ -3,19 +3,20 @@
     background-color: #f0f0f0;
 }
 
-/* 네비바 아래 내용 */
+/* 본문 */
 #content {
     float: left;
     margin: 50px;
 }
 
+/* 본문 */
 #content_top {
     margin-bottom: 50px;
     font-family: 'consolas';
 }
 
 /* 터미널창 */
-.terminal {
+#content_top .terminal {
     width: 45px;
     margin: 10px;
     padding: 10px;
@@ -24,17 +25,18 @@
     border: 3px solid green;
 }
 
-.terminal p {
+#content_top .terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
+/* 문법 */
 #content_middle {
     margin-bottom: 50px;
 }
 
-.grammar {
+#content_middle .grammar {
     width: 260px;
     margin: 10px;
     padding: 10px;
@@ -43,20 +45,32 @@
     border: 3px solid green;
 }
 
-.grammar p {
+#content_middle .grammar p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
+/* 옵션 */
 #content_bottom {
     margin-bottom: 50px;
 }
 
-#content_bottom .example {
-    margin-bottom: 30px;
+#content_bottom .terminal {
+    width: 45px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #000;
+    border: 3px solid green;
 }
 
-.ex img {
-    width: 200px;
+#content_bottom .terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+#content_bottom .example {
+    margin-bottom: 30px;
 }
