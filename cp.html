@@ -72,11 +72,11 @@
             </div>
 
             <div id="content">
-                <div id="content_top">
+                <div id="command">
                     <div>
                         <h1>명령어 - cp</h1>
                     </div>
-                    <div class="terminal">
+                    <div class="command_terminal">
                         <p>cp</p>
                     </div>
                     <div>
@@ -84,11 +84,11 @@
                     </div>
                 </div>
 
-                <div id="content_middle">
+                <div id="grammar">
                     <div>
                         <h3>문법</h3>
                     </div>
-                    <div class="grammar">
+                    <div class="grammar_terminal">
                         <p style="color: #aaa;">### 하나씩 복사 붙여넣기</p>
                         <p>cd -[옵션] <원본> <목적지></p>
                         <br />
@@ -102,7 +102,7 @@
                     <div>
                         <h3>목적지 표현 방법 두 가지</h3>
                         <p>1. 원본 이름 생략해서 복사 붙여넣기</p>
-                        <div class="terminal2">
+                        <div class="terminal_l">
                             <p>cp [복사할 파일] [붙여넣을 위치]</p>
                         </div>
                         <img src="./images/cp_1.png" style="width: 430px;" />
@@ -110,42 +110,42 @@
                     <div style="margin-left: 30px;">
                         <h3><br /></h3>
                         <p>2. 원본 이름을 변경해서 복사 붙여넣기</p>
-                        <div class="terminal3">
+                        <div class="terminal_r">
                             <p>cp [복사할 파일] [붙여넣을 위치]/[변경할 파일 이름]</p>
                         </div>
                         <img src="./images/cp_2.png" style="width: 450px;" />
                     </div>
                 </div>
 
-                <div class="exception">
+                <div>
                     <div>
                         <p>이름 변경해서 붙여넣기 할 시, 중복된 명일 경우(파일명이 존재할 경우)</p>
                         <p>같은 경로에 동일한 이름이 있을 경우 <b style="color: red;">강제 덮어 씌우기</b>가 된다.</p>
-                        <img src="./images/cp_3.png" />
+                        <img src="./images/cp_3.png" style="width: 430px;" />
                     </div>
-                    <div class="option">
-                        <div>
-                            <h3>옵션</h3>
-                        </div>
-                        <div class="terminal">
-                            <p>-r</p>
-                        </div>
-                        <div>
-                            <p style="margin-bottom: 30px;">복사&붙여넣기 시, 디렉터리도 포함하기 위해서 사용</p>
-                            <div class="example">
-                                <div>
-                                    <img src="./images/cp_4.png" />
-                                    <p>/backup/ 디렉터리를 ../test/c 경로 아래로 붙여넣기</p>
-                                </div>
-                                <div style="margin-left: 30px;">
-                                    <img src="./images/cp_5.png" />
-                                    <p>../test/c 아래에 backup 디렉터리랑 안에 내용도 다 붙여넣기 된 것을 확인</p>
-                                </div>
+                </div>
+
+                <div id="option">
+                    <div>
+                        <h3>옵션</h3>
+                    </div>
+                    <div class="option_terminal">
+                        <p>-r</p>
+                    </div>
+                    <div>
+                        <p>복사&붙여넣기 시, 디렉터리도 포함하기 위해서 사용</p>
+                        <div class="example">
+                            <div>
+                                <img src="./images/cp_4.png" />
+                                <p>/backup/ 디렉터리를 ../test/c 경로 아래로 붙여넣기</p>
+                            </div>
+                            <div style="margin-left: 30px;">
+                                <img src="./images/cp_5.png" />
+                                <p>../test/c 아래에 backup 디렉터리랑 안에 내용도 다 붙여넣기 된 것을 확인</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
