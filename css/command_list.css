@@ -1,0 +1,26 @@
+/* 좌측 명령어 리스트 */
+#command_list {
+    padding: 50px 0 0;
+    width: 230px;
+    float: left;
+    text-align: center;
+}
+
+#command_list li {
+    padding: 10px 0;
+    width: 230px;
+    cursor: pointer;
+}
+
+#command_list li:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#command_list li:nth-child(1) {
+    cursor: default;
+}
+
+#command_list li:nth-child(1):hover {
+    background-color: #fff;
+}

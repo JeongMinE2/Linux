@@ -1,4 +1,4 @@
-#command-list ul li:nth-child(8) {
+#command_list li:nth-child(8) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
