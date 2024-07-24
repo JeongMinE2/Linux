@@ -1,0 +1,26 @@
+/* 좌측 연산자 리스트 */
+#operator_list {
+    padding: 50px 0 0;
+    width: 230px;
+    float: left;
+    text-align: center;
+}
+
+#operator_list li {
+    padding: 10px 0;
+    width: 230px;
+    cursor: pointer;
+}
+
+#operator_list li:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#operator_list li:nth-child(1) {
+    cursor: default;
+}
+
+#operator_list li:nth-child(1):hover {
+    background-color: #fff;
+}
