@@ -89,42 +89,37 @@
 }
 
 /* KG아이티뱅크 바로가기 배너 */
-#kg-banner {
-    width: 150px;
+#kg_banner {
+    width: 100px;
     text-align: center;
     position: fixed;
     top: 40%;
     right: 0;
 }
 
-#kg-banner img {
-    width: 150px;
+#kg_banner img {
+    width: 100px;
     filter: brightness(1);
     transition: 0.5s;
 }
 
-#kg-banner img:hover {
+#kg_banner img:hover {
     filter: brightness(0.9);
     border-radius: 30px;
 }
 
-#kg-banner p {
-    font-size: 17px;
+#kg_banner p {
+    font-size: 11px;
     font-weight: bold;
     position: absolute;
-    bottom: 25px;
-    left: 15px;
+    bottom: 23px;
+    margin-left: 9px;
 }
 
-#time {
+/* 학원 시간 */
+#time_table {
     margin: 20px;
     font-size: 20px;
-}
-
-#linux-link {
-    margin: 20px;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 /* 커리큘럼표 */
