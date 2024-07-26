@@ -1,48 +1,46 @@
-#command_list li:nth-child(7) {
+/* 명령어 리스트 - 선택된 명령어 블록 색상 변경 */
+#command-list li:nth-child(7) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+/* 명령어 터미널 */
+#command .command-terminal {
+    width: 80px;
 }
 
-/* 명령어 설명 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
+#command .command-example1 {
+    margin-top: 30px;
 }
 
-/* 터미널창 */
-#command .command_terminal {
-    width: 60px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#command .command-example1 img {
+    width: 550px;
 }
 
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#command .command-example2 {
+    margin-top: 30px;
+}
+
+#command .command-example2 img {
+    width: 800px;
 }
 
 /* 옵션 */
-#option .option_terminal {
-    width: 40px;
-    margin: 10px;
+#option .option-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 160px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#option .option_terminal p {
+#option .option-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
+}
+
+#option .option-example img {
+    width: 550px;
 }

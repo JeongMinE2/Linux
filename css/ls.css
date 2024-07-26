@@ -1,76 +1,63 @@
-#command_list li:nth-child(4) {
+/* 명령어 리스트 - 선택된 명령어 블록 색상 변경 */
+#command-list li:nth-child(4) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+/* 문법 터미널 */
+#grammar .grammar-terminal {
+    width: 270px;
 }
 
-/* 본문 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
-}
-
-/* 터미널창 */
-#command .command_terminal {
-    width: 45px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-/* 문법 */
-#grammar {
+/* 예시 */
+#command-example {
     margin-bottom: 50px;
 }
 
-#grammar .grammar_terminal {
-    width: 260px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#command-example h2 {
+    margin-bottom: 10px;
 }
 
-#grammar .grammar_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#command-example .command-example-thumb {
+    width: 250px;
 }
 
 /* 옵션 */
-#option {
-    margin-bottom: 50px;
+#option .option-example-thumb {
+    margin-bottom: 30px;
 }
 
-#option .terminal {
-    width: 45px;
-    margin: 10px;
+#option .option-example-thumb .option-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 40px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#option .terminal p {
+#option .option-example-thumb .option-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#option .example {
-    margin-bottom: 30px;
+#option .option-example-thumb .option-example1 img {
+    width: 750px;
+}
+
+#option .option-example-thumb .option-example2 img {
+    width: 450px;
+}
+
+#option .option-example-thumb .option-example3 img {
+    width: 400px;
+}
+
+#option .option-example-thumb .option-example4 img {
+    width: 250px;
+}
+
+#option .option-example-thumb .option-example5 img {
+    width: 450px;
 }

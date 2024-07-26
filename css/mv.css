@@ -1,87 +1,73 @@
-#command_list li:nth-child(6) {
+/* 명령어 리스트 - 선택된 명령어 블록 색상 변경 */
+#command-list li:nth-child(6) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+/* 문법 터미널 */
+#grammar .grammar-terminal {
+    width: 480px;
 }
 
-/* 명령어 설명 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
-}
-
-/* 터미널창 */
-#command .command_terminal {
-    width: 45px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-/* 문법 */
-#grammar {
-    margin-bottom: 50px;
-}
-
-#grammar .grammar_terminal {
-    width: 470px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#grammar .grammar_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-/* 추가 문법 */
+/* 예제 */
 #example {
+    margin-bottom: 30px;
+}
+
+#example img {
+    width: 500px;
+}
+
+/* 디렉터리 옮기기 & 이름 변경 섹션 */
+#command-apply {
     display: flex;
 }
 
-#example .terminal_l {
-    width: 320px;
-    margin: 10px;
+/* 디렉터리 옮기기 터미널 */
+#command-apply .directory-change .directory-change-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 330px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#example .terminal_l p {
+#command-apply .directory-change .directory-change-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#example .terminal_r {
+
+/* 디렉터리 옮기기 이미지 */
+#command-apply .directory-change .directory-change-thumb img {
+    margin-top: 10px;
+    width: 600px;
+}
+
+/* 이름 변경 터미널 */
+#command-apply .name-change {
+    margin-left: 30px;
+}
+
+#command-apply .name-change .name-change-terminal {
+    margin-top: 10px;
+    padding: 10px;
     width: 290px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#example .terminal_r p {
+#command-apply .name-change .name-change-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
+}
+
+/* 이름 변경 이미지 */
+#command-apply .name-change .name-change-thumb img {
+    margin-top: 10px;
+    width: 500px;
 }

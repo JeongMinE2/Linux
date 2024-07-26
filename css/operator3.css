@@ -1,32 +1,55 @@
-#operator_list li:nth-child(4) {
+#operator-list li:nth-child(4) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
-}
-
-/* 연산자 설명 */
-#operator {
+#operator-example {
     margin-bottom: 50px;
-    font-family: 'consolas';
+    display: flex;
 }
 
-/* 터미널창 */
-#operator .operator_terminal {
-    width: 40px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#operator-example img {
+    margin-right: 20px;
+    width: 150px;
 }
 
-#operator .operator_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+/* 응용 */
+#apply h2 {
+    margin-bottom: 10px;
+}
+
+#apply .apply-example-section1 {
+    margin-bottom: 50px;
+}
+
+#apply .apply-example-section1 .apply-example-thumb1 img {
+    width: 350px;
+}
+
+#apply .apply-example-section1 .apply-example-thumb2 img {
+    width: 800px;
+}
+
+#apply h3 {
+    margin-bottom: 10px;
+}
+
+#apply .apply-example-section2 .apply-example-thumb1 {
+    margin-bottom: 10px;
+}
+
+#apply .apply-example-section2 .apply-example-thumb1 img {
+    width: 600px;
+}
+
+#apply .apply-example-section2 .apply-example-thumb2 {
+    margin-bottom: 10px;
+}
+
+#apply .apply-example-section2 .apply-example-thumb2 img {
+    width: 900px;
+}
+
+#apply .apply-example-section2 .apply-example-thumb3 img {
+    width: 900px;
 }

@@ -1,52 +1,40 @@
-#command_list li:nth-child(10) {
+#command-list li:nth-child(10) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+/* 명령어 터미널 */
+#command .command-terminal {
+    width: 90px;
 }
 
-/* 명령어 설명 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
-}
-
-/* 터미널창 */
-#command .command_terminal {
-    width: 60px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-/* 문법 */
-#grammar {
-    margin-bottom: 50px;
-}
-
-#grammar .grammar_terminal {
+/* 문법 터미널 */
+#grammar .grammar-terminal {
     width: 200px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
 }
 
-#grammar .grammar_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+/* 예시 */
+#example1 {
+    margin-bottom: 30px;
+}
+
+#example1 img {
+    width: 500px;
+}
+
+/* 파일 & 디렉터리 예시 */
+#example2 {
+    display: flex;
+}
+
+#example2 .file img {
+    width: 500px;
+}
+
+#example2 .directory {
+    margin-left: 30px;
+}
+
+#example2 .directory img {
+    width: 500px;
 }

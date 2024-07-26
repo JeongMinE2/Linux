@@ -1,93 +1,69 @@
-#operator_list li:nth-child(2) {
+/* 연산자 리스트 - 선택된 연산자 블록 색상 변경 */
+#operator-list li:nth-child(2) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
-}
-
-/* 연산자 설명 */
-#operator {
+/* 연산자 예시 */
+#operator-example {
     margin-bottom: 50px;
-    font-family: 'consolas';
 }
 
-/* 터미널창 */
-#operator .operator_terminal {
-    width: 40px;
-    margin: 10px;
+/* 예시 터미널 */
+#operator-example .operator-example-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 70px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#operator .operator_terminal p {
+#operator-example .operator-example-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
+}
+
+/* 주의사항 */
+#caution .caution-text {
+    margin: 10px 0 10px;
+    color: red;
+}
+
+#caution .caution-section {
+    display: flex;
+}
+
+#caution .caution-section .caution-example1 {
+    margin-right: 30px;
+}
+
+#caution .caution-section .caution-example1 img {
+    width: 700px;
+}
+
+#caution .caution-section .caution-example2 {
+    margin-right: 30px;
+}
+
+#caution .caution-section .caution-example2 img {
+    width: 700px;
 }
 
 /* 예시 */
-.example_terminal1 {
-    width: 80px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#example {
+    display: flex;
 }
 
-.example_terminal1 p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#example .example-thumb1 {
+    margin-right: 30px;
 }
 
-.example_terminal2 {
-    width: 170px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#example .example-thumb1 img {
+    width: 700px;
 }
 
-.example_terminal2 p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-.example_terminal3 {
-    width: 210px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-.example_terminal3 p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-.example_terminal4 {
-    width: 260px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-.example_terminal4 p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#example .example-thumb2 img {
+    width: 700px;
 }

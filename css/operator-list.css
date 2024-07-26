@@ -1,26 +1,26 @@
-/* 좌측 명령어 리스트 */
-#command-list {
+/* 좌측 연산자 리스트 */
+#operator-list {
     padding: 50px 0 0;
     width: 230px;
     float: left;
     text-align: center;
 }
 
-#command-list li {
+#operator-list li {
     padding: 10px 0;
     width: 230px;
     cursor: pointer;
 }
 
-#command-list li:hover {
+#operator-list li:hover {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-#command-list li:nth-child(1) {
+#operator-list li:nth-child(1) {
     cursor: default;
 }
 
-#command-list li:nth-child(1):hover {
+#operator-list li:nth-child(1):hover {
     background-color: #fff;
 }

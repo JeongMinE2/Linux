@@ -91,3 +91,8 @@ ul li ul li a:hover {
     font-weight: bold;
     background-color: #f0f0f0;
 }
+
+/* 네비바 아래 내용 */
+#content {
+    margin: 50px;
+}

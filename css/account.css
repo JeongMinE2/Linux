@@ -2,33 +2,47 @@
     margin: 50px;
 }
 
-/* 터미널창 */
-.terminal {
+#content .account-pw-change {
+    margin-bottom: 50px;
+}
+
+/* 계정 비밀번호 변경 터미널 */
+#account-pw-change {
+    margin-bottom: 50px;
+}
+
+#account-pw-change .terminal {
+    margin-top: 10px;
+    padding: 10px;
     width: 160px;
-    margin: 10px;
-    padding: 10px;
     padding-left: 50px;
     background-color: #000;
     border: 3px solid green;
 }
 
-.terminal p {
+#account-pw-change .terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-.terminal2 {
+/* 관리자 위임 터미널 */
+#manager-mandate .terminal {
+    margin-top: 10px;
+    padding: 10px;
     width: 60px;
-    margin: 10px;
-    padding: 10px;
     padding-left: 50px;
     background-color: #000;
     border: 3px solid green;
 }
 
-.terminal2 p {
+#manager-mandate .terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
+}
+
+#manager-mandate .thumb {
+    margin-top: 10px;
+    width: 180px;
 }

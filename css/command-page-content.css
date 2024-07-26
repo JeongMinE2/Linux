@@ -1,0 +1,46 @@
+/* 본문 */
+#content {
+    float: left;
+    margin: 50px;
+}
+
+/* 명령어 설명 */
+#command {
+    margin-bottom: 50px;
+}
+
+/* 명령어 터미널 */
+#command .command-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    width: 60px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#command .command-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+/* 문법 */
+#grammar {
+    margin-bottom: 50px;
+}
+
+/* 문법 터미널 */
+#grammar .grammar-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#grammar .grammar-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}

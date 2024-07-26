@@ -1,94 +1,76 @@
-#command_list li:nth-child(5) {
+/* 명령어 리스트 - 선택된 명령어 블록 색상 변경 */
+#command-list li:nth-child(5) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
-}
-
-/* 명령어 설명 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
-}
-
-/* 터미널창 */
-#command .command_terminal {
-    width: 45px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
-}
-
-/* 문법 */
-#grammar {
-    margin-bottom: 50px;
-}
-
-#grammar .grammar_terminal {
-    width: 350px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#grammar .grammar_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+/* 문법 터미널 */
+#grammar .grammar-terminal {
+    width: 480px;
 }
 
 /* 목적지 표현 방법 */
-#content_bottom {
+#destination-method {
     margin-bottom: 30px;
+}
+
+#destination-method h2 {
+    margin-bottom: 10px;
+}   
+
+#destination-method .destination-method-section {
     display: flex;
 }
 
-#content_bottom h3 {
-    margin-bottom: 10px;
+#destination-method .destination-method-section .destination-method1 {
+    margin-right: 30px;
 }
 
-#content_bottom .terminal_l {
-    width: 280px;
-    margin: 10px 0;
+/* 원본 이름 생략해서 복사 붙여넣기 터미널 */
+.destination-method1 .destination-method1-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 300px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#content_bottom .terminal_l p {
+.destination-method1 .destination-method1-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-#content_bottom .terminal_r {
-    width: 440px;
-    margin: 10px 0;
+.destination-method1 img {
+    margin-top: 10px;
+    width: 450px;
+}
+
+/* 원본 이름을 변경해서 복사 붙여넣기 터미널 */
+.destination-method2 .destination-method2-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 450px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#content_bottom .terminal_r p {
+.destination-method2 .destination-method2-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
+}
+
+.destination-method2 img {
+    margin-top: 10px;
+    width: 500px;
+}
+
+/* 중복된 명일 경우의 수 */
+#duplication img {
+    width: 500px;
 }
 
 /* 옵션 */
@@ -96,27 +78,33 @@
     margin-top: 50px;
 }
 
-#option .option_terminal {
-    width: 45px;
-    margin: 10px 0;
+#option .option-terminal {
+    margin-top: 10px;
     padding: 10px;
-    padding-left: 50px;
+    width: 50px;
+    padding-left: 30px;
     background-color: #000;
     border: 3px solid green;
 }
 
-#option .option_terminal p {
+#option .option-terminal p {
     color: #fff;
     font-family: 'consolas';
     white-space: nowrap;
 }
 
-.example {
+#option .option-example {
     margin-top: 30px;
-    display: flex;
 }
 
-.example img {
-    width: 400px;
-    margin-bottom: 0;
+#option .option-example .option-example-thumb1 {
+    margin-bottom: 10px;
+}
+
+#option .option-example .option-example-thumb1 img {
+    width: 450px;
+}
+
+#option .option-example .option-example-thumb2 img {
+    width: 500px;
 }

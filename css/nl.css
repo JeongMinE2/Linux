@@ -1,32 +1,12 @@
-#command_list li:nth-child(14) {
+#command-list li:nth-child(14) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+#example .example-thumb1 {
+    width: 750px;
 }
 
-/* 명령어 설명 */
-#command {
-    margin-bottom: 50px;
-    font-family: 'consolas';
-}
-
-/* 터미널창 */
-#command .command_terminal {
-    width: 60px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
-}
-
-#command .command_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#example .example-thumb2 {
+    width: 250px;
 }

@@ -1,32 +1,40 @@
-#operator_list li:nth-child(3) {
+#operator-list li:nth-child(3) {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* 본문 */
-#content {
-    float: left;
-    margin: 50px;
+#example1 {
+    margin-bottom: 30px;
 }
 
-/* 연산자 설명 */
-#operator {
-    margin-bottom: 50px;
-    font-family: 'consolas';
+#example1 img {
+    width: 600px;
 }
 
-/* 터미널창 */
-#operator .operator_terminal {
-    width: 40px;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    background-color: #000;
-    border: 3px solid green;
+#example2 .example2-thumb {
+    margin-bottom: 30px;
 }
 
-#operator .operator_terminal p {
-    color: #fff;
-    font-family: 'consolas';
-    white-space: nowrap;
+#example2 .example2-section1 {
+    margin-bottom: 30px;
+}
+
+#example2 .example2-section1 img {
+    width: 550px;
+}
+
+#example2 .example2-section2 {
+    display: flex;
+}
+
+#example2 .example2-section2 .example2-section2-thumb1 {
+    margin-right: 30px;
+}
+
+#example2 .example2-section2 .example2-section2-thumb1 img {
+    width: 500px;
+}
+
+#example2 .example2-section2 .example2-section2-thumb2 img {
+    width: 550px;
 }
