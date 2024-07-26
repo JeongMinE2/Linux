@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mkdir 명령어</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/command-list.css">
+    <link rel="stylesheet" type="text/css" href="../css/command-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/mkdir.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="#">명령어</a></li>
+                            <li><a href="operator1.html">연산자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!-- 좌측 리눅스 명령어 -->
+            <div>
+                <ul id="command-list">
+                    <li><h2>리눅스 명령어</h2></li>
+                    <li><a href="pwd.html">pwd</a></li>
+                    <li><a href="cd.html">cd</a></li>
+                    <li><a href="ls.html">ls</a></li>
+                    <li><a href="cp.html">cp</a></li>
+                    <li><a href="cp.html">mv</a></li>
+                    <li><a href="#">mkdir</a></li>
+                    <li><a href="rm.html">rm</a></li>
+                    <li><a href="help.html">help</a></li>
+                    <li><a href="touch.html">touch</a></li>
+                    <li><a href="cat.html">cat</a></li>
+                    <li><a href="head.html">head</a></li>
+                    <li><a href="tail.html">tail</a></li>
+                    <li><a href="nl.html">nl</a></li>
+                    <li><a href="grep.html">grep</a></li>
+                    <li><a href="find.html">find</a></li>
+                    <li><a href="alias.html">alias</a></li>
+                </ul>
+            </div>
+
+            <!-- 명령어 설명 -->
+            <div id="content">
+                <!-- 제목 -->
+                <h1>명령어 - mkdir</h1>
+
+                <div id="command">
+                    <div class="command-terminal">
+                        <p># mkdir</p>
+                    </div>
+                    <div>
+                        <p>디렉터리(폴더) 생성</p>
+                    </div>
+                    <div class="command-example1">
+                        <div>
+                            <img src="../images/mkdir_1.png" />
+                            <p>파일 or 디렉터리가 동일명으로 존재할 경우 mkdir 명령어로 디렉터리 생성 불가</p>
+                        </div>
+                    </div>
+                    <div class="command-example2">
+                        <div>
+                            <img src="../images/mkdir_2.png" />
+                            <p>생성할 디렉터리의 경로 중 없는 경로로 디렉터리 생성 시, 생성 불가</p>
+                            <p>경로에 f 디렉터리가 없기 때문에 g라는 디렉터리 생성 불가</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="option">
+                    <h2>옵션</h2>
+                    <div class="option-terminal">
+                        <p>-p</p>
+                        <p style="color: #aaa;">### -p(parents)</p>
+                    </div>
+                    <div class="option-example">
+                        <p>필요한 경우 -p 옵션을 이용해 부모 디렉터리도 같이 생성</p>
+                        <img src="../images/mkdir_3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

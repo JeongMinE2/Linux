@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 >></title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-list.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator3.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="pwd.html">명령어</a></li>
+                            <li><a href="#">연산자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!-- 좌측 연산자 -->
+            <div>
+                <ul id="operator-list">
+                    <li><h2>연산자</h2></li>
+                    <li><a href="#">>></a></li>
+                    <li><a href="operator2.html">></a></li>
+                    <li><a href="operator3.html">>></a></li>
+                </ul>
+            </div>
+
+            <!-- 중앙 연산자 설명 -->
+            <div id="content">
+                <!-- 제목 -->
+                <h1>연산자 - >></h1>
+
+                <div id="operator">
+                    <div class="operator-terminal">
+                        <p>>></p>
+                    </div>
+                    <div>
+                        <p>왼쪽 명령문 결과 출력물을 오른쪽에 쓴 경로에 이름으로 문서가 있으면 내용이 추가되어 저장(내용 추가할 때 사용)</p>
+                    </div>
+                </div>
+
+                <div id="operator-example">
+                    <div>
+                        <img src="../images/operator_9.png" />
+                    </div>
+                    <div>
+                        <p>file1 파일에</p>
+                        <br />
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <br />
+                        <p>내용물만 있었는데 연산자 >> 를 사용하여</p>
+                        <br />
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <br />
+                        <p>내용물 추가</p>
+                    </div>
+                </div>
+
+                <div id="apply">
+                    <h2>응용</h2>
+                    <div class="apply-example-section1">
+                        <div class="apply-example-thumb1">
+                            <img src="../images/operator_10.png" />
+                            <p>/etc/라는 디렉터리 안에 있는 내용물을 나열하는데 위에서부터 5줄만 출력하고 줄 번호를 붙여서 출력 후 그 내용을 file2에 저장</p>
+                        </div>
+                        <div class="apply-example-thumb2">
+                            <img src="../images/operator_11.png" />
+                            <p>cat 명령어로 file2를 확인해보면 출력된 내용물이 들어간 것을 확인할 수 있다.</p>
+                        </div>
+                    </div>
+                    <h3>2개의 파일을 합쳐서 하나의 파일 생성</h3>
+                    <div class="apply-example-section2">
+                        <div class="apply-example-thumb1">
+                            <img src="../images/operator_12.png" />
+                            <p>file3 없는 거 확인</p>
+                        </div>
+                        <div class="apply-example-thumb2">
+                            <img src="../images/operator_13.png" />
+                            <p>file1, file2 내용물 확인</p>
+                        </div>
+                        <div class="apply-example-thumb3">
+                            <img src="../images/operator_14.png" />
+                            <p>file1, file2의 내용을 file3에 저장</p>
+                            <p>file3가 생긴 것을 볼 수 있다.</p>
+                            <p>file3 내용물을 출력해보면 file1과 file2의 내용이 들어가 있는 것을 확인할 수 있다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

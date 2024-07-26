@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 |</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-list.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator1.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="pwd.html">명령어</a></li>
+                            <li><a href="#">연산자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!-- 좌측 연산자 -->
+            <div>
+                <ul id="operator-list">
+                    <li><h2>연산자</h2></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="operator2.html">></a></li>
+                    <li><a href="operator3.html">>></a></li>
+                </ul>
+            </div>
+
+            <!-- 연산자 설명 -->
+            <div id="content">
+                <!-- 제목 -->
+                <h1>연산자 - |</h1>
+
+                <div id="operator">
+                    <div class="operator-terminal">
+                        <p>|</p>
+                    </div>
+                    <div>
+                        <p>명령어를 동시에 사용(조합)</p>
+                    </div>
+                </div>
+
+                <div id="operator-example">
+                    <h2>예시</h2>
+                    <div class="operator-example-terminal">
+                        <p>A | B</p>
+                    </div>
+                    <div>
+                        <p>B라는 명령어를 보조 기능으로 사용해서 A라는 출력 명령어 합쳐져서 결과 실행</p>
+                    </div>
+                </div>
+
+                <div id="caution">
+                    <h2>주의사항</h2>
+                    <p class="caution-text">순서를 고려하여 작성해야 한다.</p>
+                    <div class="caution-section">
+                        <div class="caution-example1">
+                            <div>
+                                <img src="../images/operator_3.png" />
+                                <p>1. /etc/라는 디렉터리 안에 있는 내용물을 나열</p>
+                                <p>2. 마지막 줄에서 위로 다섯 줄 출력</p>
+                                <p>3. 앞에 번호 매기기</p>
+                            </div>
+                        </div>
+                        <div class="caution-example2">
+                            <div>
+                                <img src="../images/operator_4.png" />
+                                <p>1. /etc/라는 디렉터리 안에 있는 내용물을 나열</p>
+                                <p>2. 앞에 번호 매기기</p>
+                                <p>3. 마지막 줄에서 위로 다섯 줄 출력</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="example">
+                    <div class="example-thumb1">
+                        <div>
+                            <p>/etc/라는 디렉터리 안에 있는 내용물을 나열하고 줄 번호를 붙여서 출력</p>
+                            <img src="../images/operator_1.png" />
+                        </div>
+                    </div>
+
+                    <div class="example-thumb2">
+                        <div>
+                            <p>/etc/라는 디렉터리 안에 있는 내용물을 나열하고 위에서부터 세 줄 출력</p>
+                            <img src="../images/operator_2.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

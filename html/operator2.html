@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 ></title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-list.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/operator2.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="pwd.html">명령어</a></li>
+                            <li><a href="#">연산자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!-- 좌측 연산자 -->
+            <div>
+                <ul id="operator-list">
+                    <li><h2>연산자</h2></li>
+                    <li><a href="operator1.html">|</a></li>
+                    <li><a href="#">></a></li>
+                    <li><a href="operator3.html">>></a></li>
+                </ul>
+            </div>
+
+            <!-- 연산자 설명 -->
+            <div id="content">
+                <!-- 제목 -->
+                <h1>연산자 - ></h1>
+
+                <div id="operator">
+                    <div class="operator-terminal">
+                        <p>></p>
+                    </div>
+                    <div>
+                        <p>왼쪽 명령문 결과 출력물을 오른쪽에 쓴 경로에 이름으로 <b style="color: red;">강제로 덮어 씌워서</b> 문서 생성</p>
+                    </div>
+                </div>
+
+                <div id="example1">
+                    <img src="../images/operator_5.png" />
+                    <p>아무런 내용을 기재하지 않아도 강제로 file이라는 문서가 생성되었다.</p>
+                </div>
+
+                <div id="example2">
+                    <div class="example2-section1">
+                        <img src="../images/operator_6.png" />
+                        <p>명령어 cat을 사용하여 file1에 내용을 넣는데 빈 파일이라 내용을 기재 후, [Ctrl + c]로 종료</p>
+                        <p>파일을 확인해보면 기재한 내용이 파일에 들어가 있는 것을 확인할 수 있다.</p>
+                    </div>
+                    <div class="example2-section2">
+                        <div class="example2-section2-thumb1">
+                            <img src="../images/operator_7.png" />
+                            <p>file1의 용량과 시간을 확인 후,</p>
+                            <p>연산자 > 를 사용하여 빈 내용 삽입</p>
+                        </div>
+                        <div class="example2-section2-thumb2">
+                            <img src="../images/operator_8.png" />
+                            <p>강제로 덮어 씌어져서 용량과 시간이 바뀐 것을 볼 수 있다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mv 명령어</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/command-list.css">
+    <link rel="stylesheet" type="text/css" href="../css/command-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/mv.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="#">명령어</a></li>
+                            <li><a href="operator1.html">연산자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <!-- 좌측 리눅스 명령어 -->
+            <div>
+                <ul id="command-list">
+                    <li><h2>리눅스 명령어</h2></li>
+                    <li><a href="pwd.html">pwd</a></li>
+                    <li><a href="cd.html">cd</a></li>
+                    <li><a href="ls.html">ls</a></li>
+                    <li><a href="cp.html">cp</a></li>
+                    <li><a href="#">mv</a></li>
+                    <li><a href="mkdir.html">mkdir</a></li>
+                    <li><a href="rm.html">rm</a></li>
+                    <li><a href="help.html">help</a></li>
+                    <li><a href="touch.html">touch</a></li>
+                    <li><a href="cat.html">cat</a></li>
+                    <li><a href="head.html">head</a></li>
+                    <li><a href="tail.html">tail</a></li>
+                    <li><a href="nl.html">nl</a></li>
+                    <li><a href="grep.html">grep</a></li>
+                    <li><a href="find.html">find</a></li>
+                    <li><a href="alias.html">alias</a></li>
+                </ul>
+            </div>
+
+            <!-- 명령어 설명 -->
+            <div id="content">
+                <!-- 제목 -->
+                <h1>명령어 - mv(move)</h1>
+
+                <div id="command">
+                    <div class="command-terminal">
+                        <p># mv</p>
+                    </div>
+                    <div>
+                        <p>파일 또는 디렉터리 옮기기(잘라내서 붙여넣기)</p>
+                        <p>사용법, 문법, 특징, 형식 등 ‘cp’와 동일</p>
+                        <p>cp가 하는 모든 기능은 mv가 다 할 수 있다.</p>
+                    </div>
+                </div>
+
+                <div id="grammar">
+                    <h2>문법</h2>
+                    <div class="grammar-terminal">
+                        <p>mv [잘라낼 원본1] [잘라낼 원본2] ... [붙여넣는 목적지]</p>
+                    </div>
+                </div>
+
+                <div id="example">
+                    <p>/backup/ 디렉터리 안에 있는 모든 파일을  ./a/로 이동</p>
+                    <img src="../images/mv_1.png" />
+                </div>
+
+                <div id="command-apply">
+                    <div class="directory-change">
+                        <div>
+                            <h3>[디렉터리 옮기기]</h3>
+                        </div>
+                        <div class="directory-change-terminal">
+                            <p>mv [옮길 디렉터리] [붙여넣는 목적지]</p>
+                        </div>
+                        <div class="directory-change-thumb">
+                            <img src="../images/mv_4.png" />
+                        </div>
+                    </div>
+                    <div class="name-change">
+                        <div>
+                            <h3>[이름 변경]</h3>
+                        </div>
+                        <div class="name-change-terminal">
+                            <p>mv [잘라낼 원본1] [변경할 이름]</p>
+                        </div>
+                        <div class="name-change-thumb">
+                            <img src="../images/mv_5.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
