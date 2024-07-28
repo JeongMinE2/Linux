@@ -3,9 +3,431 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vi 편집기</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/command-page-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/vi.css">
 </head>
 <body>
-    
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="ubuntu_install.html">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="pwd.html">명령어</a></li>
+                            <li><a href="operator1.html">연산자</a></li>
+                            <li><a href="#">vi 편집기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">아직 수강 중인 강좌가 아닙니다.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div>
+                <h1>vi 편집기</h1>
+                <div id="command">
+                    <div class="command-terminal">
+                        <p># vi</p>
+                    </div>
+                    <div>
+                        <p>빈 문서 실행(즉, 문서 파일 작업)</p>
+                        <p>Emacs와 함께 유닉스 환경에서 많이 쓰이는 문서 편집기</p>
+                        <p>명령, 실행(EX), 입력 모드가 있다.</p>
+                    </div>
+                </div>
+
+                <div id="grammar">
+                    <h2>문법</h2>
+                    <div class="grammar-terminal">
+                        <p>vi [편집할 파일명]</p>
+                    </div>
+                    <div>
+                        <p>지정한 파일을 열고 편집</p>
+                    </div>
+                </div>
+
+                <div id="vi-example1">
+                    <div class="colon-example">
+                        <div class="colon-example1">
+                            <div class="vi-terminal">
+                                <p>:set nu</p>
+                            </div>
+                            <div>
+                                <img src="../images/vi_1.png" />
+                            </div>
+                            <div>
+                                <p>vi 편집기에서 줄 번호를 활성화 시켜준다.</p>
+                            </div>
+                        </div>
+
+                        <div class="colon-example2">
+                            <div class="vi-terminal">
+                                <p>:[숫자]</p>
+                            </div>
+                            <div>
+                                <img src="../images/vi_2.png" />
+                            </div>
+                            <div>
+                                <p>vi 편집기에서 원하는 줄 번호로 이동</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="vi-example2">
+                        <div>
+                            <img src="../images/vi_3.png" />
+                        </div>
+                        <div>
+                            <p>없는 파일을 vi 편집기로 실행시키고</p>
+                            <p>:wq로 저장하고 끄면 새로운 파일이 생긴다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">명령 모드</label>
+
+            <input id="programming" type="radio" name="tab_item">
+            <label class="tab_item" for="programming">입력 모드</label>
+
+            <input id="design" type="radio" name="tab_item">
+            <label class="tab_item" for="design">실행 모드</label>
+
+            <!-- 명령 모드 내용 -->
+            <div class="tab_content" id="all_content">
+                <p>vi의 기본 모드로, vi가 처음 실행되거나 입력 모드에서 ESC 키를 누른 경우</p>
+                <p>커서 이동, 문자열 수정, Copy & Paste 등</p>
+
+                <div id="table-section">
+                    <!-- 커서 이동 -->
+                    <div>
+                        <h2>커서 이동</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Key</th>
+                                    <th>동작</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>h</td>
+                                    <td>커서를 왼쪽으로 이동</td>
+                                </tr>
+                                <tr>
+                                    <td>j</td>
+                                    <td>커서를 아래로 이동</td>
+                                </tr>
+                                <tr>
+                                    <td>k</td>
+                                    <td>커서를 위로 이동</td>
+                                </tr>
+                                <tr>
+                                    <td>l</td>
+                                    <td>커서를 오른쪽으로 이동</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 커서 이동(행 단위) -->
+                    <div>
+                        <h2>커서 이동(행 단위)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Key</th>
+                                    <th>동작</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0(Zero)</td>
+                                    <td>행의 처음으로 이동</td>
+                                </tr>
+                                <tr>
+                                    <td>$</td>
+                                    <td>행의 마지막으로 이동</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 커서 이동(문서 단위) -->
+                    <div>
+                        <h2>커서 이동(문서 단위)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Key</th>
+                                    <th>동작</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gg</td>
+                                    <td>문서의 처음으로 이동</td>
+                                </tr>
+                                <tr>
+                                    <td>G</td>
+                                    <td>문서의 마지막으로 이동</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Key</th>
+                                    <th>동작</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+                                    <td>커서가 있는 문자 삭제(delete 키와 같음)</td>
+                                </tr>
+                                <tr>
+                                    <td>X</td>
+                                    <td>커서가 있는 앞 문자 삭제(Backspace 키)</td>
+                                </tr>
+                                <tr>
+                                    <td>dd</td>
+                                    <td>현재 커서의 행 삭제</td>
+                                </tr>
+                                <tr>
+                                    <td>숫자 + dd</td>
+                                    <td>현재 커서부터 숫자만큼 행 삭제</td>
+                                </tr>
+                                <tr>
+                                    <td>yy</td>
+                                    <td>현재 커서의 행 복사</td>
+                                </tr>
+                                <tr>
+                                    <td>숫자 + yy</td>
+                                    <td>현재 커서부터 숫자만큼의 행 복사</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>복사한 내용을 현재 행 <b>이후에</b> 붙여넣기</td>
+                                </tr>
+                                <tr>
+                                    <td>P</td>
+                                    <td>복사한 내용을 현재 행 <b>이전에</b> 붙여넣기</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>되돌리기(undo) / 앞으로(redo)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 입력 모드 내용 -->
+            <div class="tab_content" id="programming_content">
+                <p>명령 상태에서 키를 누르면 진입</p>
+                <p>왼쪽 하단에 --INSERT-- 라고 뜬다.</p>
+
+                <table style="margin-top: 50px;">
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>동작</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>i</td>
+                            <td>커서의 현재 위치에서 입력 모드로 변경</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>커서의 현재 위치에서 우측으로 한 칸 이동 후 입력 모드로 변경</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td>커서 아래에 새로운 행을 추가하고 입력 모드로 변경</td>
+                        </tr>
+                        <tr>
+                            <td>O</td>
+                            <td>커서 위에 새로운 행을 추가하고 입력 모드로 변경</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 실행 모드 내용 -->
+            <div class="tab_content" id="design_content">
+                <div id="exe-mode">
+                    <div>
+                        <div>
+                            <h2>검색</h2>
+                            <div class="search-terminal">
+                                <p>/</p>
+                            </div>
+                            <p>패턴이 검색된 후 n 키를 통해 아래 방향으로 계속 찾기</p>
+                            <p>패턴이 검색된 후 N 키를 통해 위 방향으로 계속 찾기</p>
+                        </div>
+
+                        <div>
+                            <h2>치환</h2>
+                            <div class="substitution-terminal">
+                                <p>:[범위]s/[Old]/[New]/[옵션]</p>
+                            </div>
+                            <div>
+                                <p>Old라는 단어를 New로 치환</p>
+                                <br />
+                                <p>띄어쓰기 없이 다 붙여서 작성</p>
+                                <p>범위는 [n(숫자)] 또는 [n, n] 또는 [%]를 넣을 수 있다.(범위는 n(숫자)이랑 %만 기억해도 충분)</p>
+                                <p>s : 치환 한다.</p>
+                                <p>/ : 구분자</p>
+                            </div>
+                        </div>
+
+                        <div id="option">
+                            <h2>옵션</h2>
+                            <div class="option-terminal">
+                                <p>g</p>
+                            </div>
+                            <div>
+                                <p>g 옵션을 주면 적용되는 라인(커서가 있는 위치의 줄)의 모든 부분 변경</p>
+                                <p>g 옵션을 주지 않으면 처음 찾은 부분만 변경</p>
+                            </div>
+                        </div>
+
+                        <div id="pause">
+                            <h2>vi 편집기 일시중지</h2>
+                            <div class="pause-terminal">
+                                <p>:! [명령어]</p>
+                            </div>
+                            <div>
+                                <p>vi 편집기 일시중지하고 명령어 수행(작업 최소화)</p>
+                            </div>
+                        </div>
+
+                        <div id="next">
+                            <h2>명령문 이어서 작성</h2>
+                            <div class="next-terminal">
+                                <p>:! [명령문]; [명령문]</p>
+                            </div>
+                            <div>
+                                <p>; 뒤에 명령문을 작성하면</p>
+                                <p>; 전에 명령문을 실행한 뒤, 이어서 ; 다음 명령문이 실행된다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 파일 및 실행 관련 -->
+                    <div>
+                        <div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>동작</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>:e</td>
+                                        <td>파일 열기(현재 작업 중인 vi 편집기 창이 닫혀야 가능)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:e! [파일명]</td>
+                                        <td>현재 작업 중인 vi 편집기를 저장하지 않고 강제 열기</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:enew</td>
+                                        <td>현재 작업 중인 vi 편집기를 닫고 빈 문서 열기</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:q</td>
+                                        <td>종료(변경된 내용이 없는 경우)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:q!</td>
+                                        <td>강제 종료(변경된 내용이 있어도 무시)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:w</td>
+                                        <td>현재 작업 중인 vi 편집기 파일 저장</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:w [파일명]</td>
+                                        <td>현재 작업 중인 vi 편집기 다른 이름으로 저장</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:wq</td>
+                                        <td>현재 작업 중인 vi 편집기 파일 저장 후 종료</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="margin-top: 50px;">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>동작</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>:f</td>
+                                        <td>현재 작업 중인 파일의 이름과 라인 수 출력</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:[n]r [파일명]</td>
+                                        <td>파일의 내용을 현재 편집 중인 파일의 n번 째 라인부터 삽입</td>
+                                    </tr>
+                                    <tr>
+                                        <td>:[n]r! [명령문]</td>
+                                        <td>명령문 실행 결과를 파읠의 n번 째 라인부터 삽입</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
