@@ -16,3 +16,10 @@ loginBtn.onclick = function() {
     alert("로그인은 안 해도 돼요~^^");
     btn.innerText = '로그아웃';
 }
+
+document.getElementById('loginBtn').addEventListener('click', function() {
+    var rememberCheckbox = document.getElementById('rememberCheckbox');
+    if (rememberCheckbox.checked) {
+        rememberCheckbox.checked = false;
+    }
+});
