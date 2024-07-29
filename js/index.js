@@ -1,6 +1,8 @@
 const btn = document.getElementById("loginBtn");
 const modal = document.getElementById("login-modal-background");
 const loginBtn = document.getElementById("login");
+const idText = document.querySelector('.id-text');
+const pwText = document.querySelector('.pw-text');
 
 btn.onclick = function() {
     if (btn.innerText === '로그인') {
@@ -22,4 +24,7 @@ document.getElementById('loginBtn').addEventListener('click', function() {
     if (rememberCheckbox.checked) {
         rememberCheckbox.checked = false;
     }
+    
+    idText.value = '';
+    pwText.value = '';
 });
