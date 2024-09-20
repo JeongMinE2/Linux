@@ -1,0 +1,32 @@
+main {
+    margin: 50px;
+}
+
+#description {
+    margin-bottom: 30px;
+}
+
+#package-install .package-command-terminal {
+    width: 205px;
+}
+
+#setting-correction .setting-command-terminal {
+    width: 240px;
+}
+
+#img1 {
+    margin-top: 30px;
+}
+
+#img1 img {
+    width: 550px;
+}
+
+#img2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#img2 img {
+    width: 500px;
+}
