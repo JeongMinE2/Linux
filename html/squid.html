@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/squid.css">
+    <link rel="stylesheet" type="text/css" href="../css/linux2-command.css">
+    <link rel="icon" href="/images/squid-icon.png">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 로고 이미지 -->
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../images/LOGO.png" title="홈으로">
+                </a>
+            </div>
+
+            <!-- 상단 네비바 -->
+            <nav>
+                <ul>
+                    <li>
+                        <p>Linux1</p>
+                        <ul>
+                            <li><a href="#">Ubuntu 설치 가이드</a></li>
+                            <li><a href="ubuntu_net.html">VMware Ubuntu 네트워크 설정</a></li>
+                            <li><a href="account.html">리눅스 계정 관련</a></li>
+                            <li><a href="directory.html">디렉터리 구조</a></li>
+                            <li><a href="pwd.html">명령어</a></li>
+                            <li><a href="operator1.html">연산자</a></li>
+                            <li><a href="vi.html">vi 편집기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Linux2</p>
+                        <ul>
+                            <li><a href="#">Squid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>회원 정보</p>
+                        <ul>
+                            <li><a href="#">회원 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="description">
+                <h2>Squid란?</h2>
+                <p>오픈 소스(GPL) 소프트웨어 <b>프록시 서버</b>이자 웹 캐시</p>
+                <p>기본 포트는 <b>3128</b></p>
+                <p>반복된 요청을 캐싱함으로 웹 서버의 속도를 향상 시킨다.</p>
+                <p>네트워크 자원을 공유하려는 사람들에게 웹, DNS와 다른 네트워크 검색의 캐싱을 제공한다.</p>
+                <p>트래픽을 걸러줌으로써 안정성에 도움을 주는 등에 이르기까지 광범위하게 이용된다.</p>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <p>예시</p>
+            </div>
+
+            <div id="package-install">
+                <h3>패키지 설치</h3>
+                <div class="package-command-terminal">
+                    <p># apt install -y squid</p>
+                </div>
+            </div>
+
+            <div id="setting-correction">
+                <h3>설정 파일 수정</h3>
+                <div class="setting-command-terminal">
+                    <p># vi /etc/squid/squid.conf</p>
+                </div>
+            </div>
+
+            <div>
+                <pre>
+acl [차단할 별칭] [IP]/[서브넷 마스크]
+http_access allow [차단할 별칭]
+cache_dir ufs /var/spool/squid 1000 16 256</pre>
+            </div>
+
+            <div id="img1">
+                <img src="/images/squid_1.png" />
+                <p><b>ACL(Access Control List)</b></p>
+                <p>특정 이용자에 대한 접근 허용 또는 차단할 때 사용</p>
+            </div>
+
+            <div id="systemctl-restart">
+                <h3>시스템 재시작</h3>
+                <div class="restart-command-terminal">
+                    <p># systemctl restart squid</p>
+                </div>
+            </div>
+
+            <div id="img2">
+                <img src="/images/squid_2.png" />
+                <p>윈도우 켜고</p>
+                <p>설정에서 '프록시' 검색</p>
+            </div>
+
+            <p>리눅스로 돌아가서</p>
+            <div id="systemctl-stop">
+                <h3>시스템 중단</h3>
+                <div class="stop-command-terminal">
+                    <p># systemctl stop squid</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
