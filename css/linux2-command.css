@@ -1,0 +1,79 @@
+#package-install {
+    margin-bottom: 30px;
+}
+
+#package-install .package-command-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#package-install .package-command-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+#setting-correction {
+    margin-bottom: 10px;
+}
+
+#setting-correction .setting-command-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#setting-correction .setting-command-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+pre {
+    padding: 10px;
+    width: 400px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+    color: #fff;
+    font-family: 'consolas';
+}
+
+#systemctl-restart {
+    margin-top: 30px;
+}
+
+#systemctl-restart .restart-command-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    width: 230px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#systemctl-restart .restart-command-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
+
+#systemctl-stop .stop-command-terminal {
+    margin-top: 10px;
+    padding: 10px;
+    width: 210px;
+    padding-left: 30px;
+    background-color: #000;
+    border: 3px solid green;
+}
+
+#systemctl-stop .stop-command-terminal p {
+    color: #fff;
+    font-family: 'consolas';
+    white-space: nowrap;
+}
